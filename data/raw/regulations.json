@@ -1,47 +1,12 @@
 [
-  {
-    "city": "Barcelona",
-    "country": "ES",
-    "licence_required": true,
-    "nights_limit": 0,
-    "tax_amount_eur": 4.00,
-    "official_source_url": "https://ajuntament.barcelona.cat/...",
-    "last_checked": "2025-07-28"
-  },
-  {
-    "city": "New York",
-    "country": "US",
-    "licence_required": true,
-    "nights_limit": 0,
-    "tax_amount_eur": 0.00,
-    "official_source_url": "https://www.nyc.gov/...",
-    "last_checked": "2025-07-28"
-  },
-  {
-    "city": "Lisboa",
-    "country": "PT",
-    "licence_required": true,
-    "nights_limit": 0,
-    "tax_amount_eur": 2.00,
-    "official_source_url": "https://cm-lisboa.pt/...",
-    "last_checked": "2025-07-28"
-  },
-  {
-    "city": "Amsterdam",
-    "country": "NL",
-    "licence_required": true,
-    "nights_limit": 30,
-    "tax_amount_eur": 4.00,
-    "official_source_url": "https://www.amsterdam.nl/...",
-    "last_checked": "2025-07-28"
-  },
-  {
-    "city": "Tokyo",
-    "country": "JP",
-    "licence_required": true,
-    "nights_limit": 0,
-    "tax_amount_eur": 0.00,
-    "official_source_url": "https://www.mlit.go.jp/...",
-    "last_checked": "2025-07-28"
-  }
+  {"city":"Barcelona","country":"ES","licence_required":true,"nights_limit":0,"tax_amount_eur":4.00,"official_source_url":"https://ajuntament.barcelona.cat/...","last_checked":"2025-07-28"},
+  {"city":"New York","country":"US","licence_required":true,"nights_limit":0,"tax_amount_eur":0.00,"official_source_url":"https://www.nyc.gov/...","last_checked":"2025-07-28"},
+  {"city":"Lisboa","country":"PT","licence_required":true,"nights_limit":0,"tax_amount_eur":2.00,"official_source_url":"https://cm-lisboa.pt/...","last_checked":"2025-07-28"},
+  {"city":"Amsterdam","country":"NL","licence_required":true,"nights_limit":30,"tax_amount_eur":4.00,"official_source_url":"https://www.amsterdam.nl/...","last_checked":"2025-07-28"},
+  {"city":"Tokyo","country":"JP","licence_required":true,"nights_limit":0,"tax_amount_eur":0.00,"official_source_url":"https://www.mlit.go.jp/...","last_checked":"2025-07-28"},
+  {"city":"Paris","country":"FR","licence_required":true,"nights_limit":120,"tax_amount_eur":5.00,"official_source_url":"https://paris.fr/","last_checked":"2025-07-28"},
+  {"city":"Berlin","country":"DE","licence_required":true,"nights_limit":90,"tax_amount_eur":5.00,"official_source_url":"https://berlin.de/","last_checked":"2025-07-28"},
+  {"city":"Palma de Mallorca","country":"ES","licence_required":true,"nights_limit":0,"tax_amount_eur":4.00,"official_source_url":"https://ajpalma.cat/","last_checked":"2025-07-28"},
+  {"city":"Vancouver","country":"CA","licence_required":true,"nights_limit":30,"tax_amount_eur":2.00,"official_source_url":"https://vancouver.ca/","last_checked":"2025-07-28"},
+  {"city":"Sydney","country":"AU","licence_required":true,"nights_limit":180,"tax_amount_eur":0.00,"official_source_url":"https://nsw.gov.au/","last_checked":"2025-07-28"}
 ]
