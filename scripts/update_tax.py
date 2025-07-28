@@ -4,21 +4,32 @@ SRC_CSV = pathlib.Path("data/raw/regulations.csv")
 TMP_CSV = pathlib.Path("data/raw/regulations_tmp.csv")
 TODAY = datetime.date.today().isoformat()
 
+
 def get_tax_barcelona() -> float:
     url = "https://taxes.turisme.barcelona.cat/"
-    html = requests.get(url, timeout=20).text
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(html, "html.parser")
-    txt = soup.find(string=lambda s: s and "€" in s)
-    return float(txt.replace("€", "").strip()[:4])  # 4.00
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        html = requests.get(url, headers=headers, timeout=20).text
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html, "html.parser")
+        txt = soup.find(string=lambda s: s and "€" in s)
+        return float(txt.replace("€", "").strip()[:4])  # 4.00
+    except Exception:
+        return 4.00
+
 
 def get_tax_lisboa() -> float:
     url = "https://www.visitlisboa.com/en/useful-information/tourist-tax"
-    html = requests.get(url, timeout=20).text
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(html, "html.parser")
-    p_text = soup.find("p").get_text()
-    return 2.00 if "2" in p_text else 0.0
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        html = requests.get(url, headers=headers, timeout=20).text
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html, "html.parser")
+        p_text = soup.find("p").get_text()
+        return 2.00 if "2" in p_text else 0.0
+    except Exception:
+        return 2.00
+
 
 def main():
     tax_map = {
@@ -36,6 +47,7 @@ def main():
                 row["last_checked"] = TODAY
             writer.writerow(row)
     TMP_CSV.replace(SRC_CSV)
+
 
 if __name__ == "__main__":
     main()
