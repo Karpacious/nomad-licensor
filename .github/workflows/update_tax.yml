@@ -1,0 +1,23 @@
+name: Update taxes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-taxes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+      - name: Run update script
+        run: python scripts/update_tax.py
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: data/raw/regulations.csv
+          message: Update tax amounts (automated)
