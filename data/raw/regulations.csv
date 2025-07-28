@@ -1,2 +1,6 @@
 city,country,licence_required,nights_limit,tax_amount_eur,official_source_url,last_checked
 Barcelona,ES,true,0,4.00,https://ajuntament.barcelona.cat/...,2025-07-28
+New York,US,true,0,0.00,https://www.nyc.gov/...,2025-07-28
+Lisboa,PT,true,0,2.00,https://cm-lisboa.pt/...,2025-07-28
+Amsterdam,NL,true,30,4.00,https://www.amsterdam.nl/...,2025-07-28
+Tokyo,JP,true,0,0.00,https://www.mlit.go.jp/...,2025-07-28
