@@ -1,7 +1,7 @@
 city,country,licence_required,nights_limit,tax_amount_eur,tax_type,min_eur,max_eur,tax_percent,state_percent,city_percent,flat_usd,official_source_url,last_checked
-Barcelona,ES,true,0,4.00,fixed,,,,,,,https://ajuntament.barcelona.cat/...,2025-12-23
+Barcelona,ES,true,0,4.00,fixed,,,,,,,https://ajuntament.barcelona.cat/...,2025-12-24
 New York,US,true,0,0.00,composite,,,4,5.875,2,https://www.nyc.gov/...,2025-07-29,
-Lisboa,PT,true,0,2.00,fixed,,,,,,,https://cm-lisboa.pt/...,2025-12-23
+Lisboa,PT,true,0,2.00,fixed,,,,,,,https://cm-lisboa.pt/...,2025-12-24
 Amsterdam,NL,true,30,0.00,percent,,,12.5,,,,https://www.amsterdam.nl/...,2025-07-29
 Tokyo,JP,true,0,0.00,range,0.60,1.20,,,,,https://www.mlit.go.jp/...,2025-07-29
 Paris,FR,true,120,0.00,range,0.65,15.60,,,,,https://paris.fr/,2025-07-29
